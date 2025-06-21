@@ -8,4 +8,8 @@ class Stack:
     def push(self,data):
         return self.stack.append(data)
 
+    def peek(self):
+        if not self.stack.isEmpty():
+            return self.stack[-1]
+        return "Stack is Empty"
 s = Stack()
